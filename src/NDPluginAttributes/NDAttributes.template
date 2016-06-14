@@ -1,0 +1,154 @@
+
+record(waveform, "$(P)$(R)PV1")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynOctetWrite")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))PV1")
+    field(FTVL, "CHAR")
+    field(NELM, "64")
+}
+
+record(waveform, "$(P)$(R)PV2")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynOctetWrite")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))PV2")
+    field(FTVL, "CHAR")
+    field(NELM, "64")
+}
+
+record(waveform, "$(P)$(R)PV3")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynOctetWrite")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))PV3")
+    field(FTVL, "CHAR")
+    field(NELM, "64")
+}
+
+record(waveform, "$(P)$(R)PV4")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynOctetWrite")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))PV4")
+    field(FTVL, "CHAR")
+    field(NELM, "64")
+}
+
+record(waveform, "$(P)$(R)PV5")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynOctetWrite")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))PV5")
+    field(FTVL, "CHAR")
+    field(NELM, "64")
+}
+
+record(waveform, "$(P)$(R)PV6")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynOctetWrite")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))PV6")
+    field(FTVL, "CHAR")
+    field(NELM, "64")
+}
+
+record(waveform, "$(P)$(R)PV7")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynOctetWrite")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))PV7")
+    field(FTVL, "CHAR")
+    field(NELM, "64")
+}
+
+record(waveform, "$(P)$(R)PV8")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynOctetWrite")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))PV8")
+    field(FTVL, "CHAR")
+    field(NELM, "64")
+}
+
+record(waveform, "$(P)$(R)PV9")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynOctetWrite")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))PV9")
+    field(FTVL, "CHAR")
+    field(NELM, "64")
+}
+
+record(waveform, "$(P)$(R)PV10")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynOctetWrite")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))PV10")
+    field(FTVL, "CHAR")
+    field(NELM, "64")
+}
+
+record(waveform, "$(P)$(R)PV11")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynOctetWrite")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))PV11")
+    field(FTVL, "CHAR")
+    field(NELM, "64")
+}
+
+record(waveform, "$(P)$(R)PV12")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynOctetWrite")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))PV12")
+    field(FTVL, "CHAR")
+    field(NELM, "64")
+}
+
+record(waveform, "$(P)$(R)PV13")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynOctetWrite")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))PV13")
+    field(FTVL, "CHAR")
+    field(NELM, "64")
+}
+
+record(waveform, "$(P)$(R)PV14")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynOctetWrite")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))PV14")
+    field(FTVL, "CHAR")
+    field(NELM, "64")
+}
+
+
+record(waveform, "$(P)$(R)PV15")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynOctetWrite")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))PV15")
+    field(FTVL, "CHAR")
+    field(NELM, "64")
+}
+
+record(waveform, "$(P)$(R)PV16")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynOctetWrite")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))PV16")
+    field(FTVL, "CHAR")
+    field(NELM, "64")
+}
+
+record(waveform, "$(P)$(R)Note")
+{
+    field(PINI, "YES")
+    field(DTYP, "asynOctetWrite")
+    field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))NOTE")
+    field(FTVL, "CHAR")
+    field(NELM, "64")
+}

@@ -1,0 +1,43 @@
+record(mbbi, "${DN}:${R}:CONFIG:STATUS_RBV" )
+{
+	field ( DTYP, "asynInt32")
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))CONFIGURATION_STATUS")
+	field ( ZRST, "Configured")
+	field ( ZRVL, "0")
+	field ( ZRSV, "NO_ALARM" )
+	field ( ONST, "Asyn Error")
+	field ( ONVL, "1")
+	field ( ONSV, "MINOR" )
+	field ( TWST, "XML File Not Found")
+	field ( TWVL, "2")
+	field ( TWSV, "MINOR" )
+	field ( THST, "XML Error")
+	field ( THVL, "3")
+	field ( THSV, "MINOR" )
+	field ( FRST, "Bad Parameter")
+	field ( FRVL, "4")
+	field ( FRSV, "MINOR" )
+	field ( FVST, "Unconfigured" )
+	field ( FVVL, "5" )
+	field ( FVSV, "MINOR" )
+	field ( SXST, "Configuring" )
+	field ( SXVL, "6" )
+	field ( SXSV, "NO_ALARM" )
+	field ( SCAN, "I/O Intr" )
+	field ( UNSV, "MINOR" )
+}
+
+record ( stringout, "${DN}:${R}:CONFIG:FILE" )
+{
+	field ( DTYP, "asynOctetWrite" )
+	field (  OUT, "@asyn($(PORT),$(ADDR),$(TIMEOUT))CONFIGURATION_FILE" )
+	field (  VAL, "" )
+}
+
+record ( stringin, "${DN}:${R}:CONFIG:FILE_RBV" )
+{
+	field ( DTYP, "asynOctetRead" )
+	field (  INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))CONFIGURATION_FILE" )
+	field ( SCAN, "I/O Intr" )
+	field (  VAL, "" )
+}

@@ -1,0 +1,184 @@
+## These records display parameters from the current configuration
+
+# These records show the target configuration parameters
+record ( stringin, "${DN}:${R}:TAR0MATERIAL" )
+{
+	field ( DTYP, "asynOctetRead" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))TARGET0_MATERIAL" )
+	field ( SCAN, "I/O Intr" )
+	field (  VAL, "" )
+}
+
+record ( stringin, "${DN}:${R}:TAR1MATERIAL" )
+{
+	field ( DTYP, "asynOctetRead" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))TARGET1_MATERIAL" )
+	field ( SCAN, "I/O Intr" )
+	field (  VAL, "" )
+}
+
+record ( stringin, "${DN}:${R}:TAR2MATERIAL" )
+{
+	field ( DTYP, "asynOctetRead" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))TARGET2_MATERIAL" )
+	field ( SCAN, "I/O Intr" )
+	field (  VAL, "" )
+}
+
+record ( stringin, "${DN}:${R}:TAR0LIGHTDIST" )
+{
+	field ( DTYP, "asynOctetRead" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))TARGET0_LIGHT_DISTRIBUTION" )
+	field ( SCAN, "I/O Intr" )
+	field (  VAL, "" )
+}
+
+record ( stringin, "${DN}:${R}:TAR1LIGHTDIST" )
+{
+	field ( DTYP, "asynOctetRead" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))TARGET1_LIGHT_DISTRIBUTION" )
+	field ( SCAN, "I/O Intr" )
+	field (  VAL, "" )
+}
+
+record ( stringin, "${DN}:${R}:TAR2LIGHTDIST" )
+{
+	field ( DTYP, "asynOctetRead" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))TARGET2_LIGHT_DISTRIBUTION" )
+	field ( SCAN, "I/O Intr" )
+	field (  VAL, "" )
+}
+
+record ( stringin, "${DN}:${R}:TAR0EFFMAPDIRECTORY" )
+{
+	field ( DTYP, "asynOctetRead" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))TARGET0_EFFICIENCY_MAP_DIRECTORY" )
+	field ( SCAN, "I/O Intr" )
+	field (  VAL, "" )
+}
+
+record ( stringin, "${DN}:${R}:TAR1EFFMAPDIRECTORY" )
+{
+	field ( DTYP, "asynOctetRead" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))TARGET1_EFFICIENCY_MAP_DIRECTORY" )
+	field ( SCAN, "I/O Intr" )
+	field (  VAL, "" )
+}
+
+record ( stringin, "${DN}:${R}:TAR2EFFMAPDIRECTORY" )
+{
+	field ( DTYP, "asynOctetRead" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))TARGET2_EFFICIENCY_MAP_DIRECTORY" )
+	field ( SCAN, "I/O Intr" )
+	field (  VAL, "" )
+}
+
+record(bi, "${DN}:${R}:TAR0EFFMAPDIRECTORYEXISTS")
+{
+	field(DTYP, "asynInt32")
+	field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))TARGET0_EFFICIENCY_MAP_DIRECTORY_EXISTS")
+	field(ZNAM, "No")
+	field(ZSV,  "MINOR")
+	field(ONAM, "Yes")
+	field(OSV,  "NO_ALARM")
+	field(SCAN, "I/O Intr")
+}
+
+record(bi, "${DN}:${R}:TAR1EFFMAPDIRECTORYEXISTS")
+{
+	field(DTYP, "asynInt32")
+	field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))TARGET1_EFFICIENCY_MAP_DIRECTORY_EXISTS")
+	field(ZNAM, "No")
+	field(ZSV,  "MINOR")
+	field(ONAM, "Yes")
+	field(OSV,  "NO_ALARM")
+	field(SCAN, "I/O Intr")
+}
+
+record(bi, "${DN}:${R}:TAR2EFFMAPDIRECTORYEXISTS")
+{
+	field(DTYP, "asynInt32")
+	field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))TARGET2_EFFICIENCY_MAP_DIRECTORY_EXISTS")
+	field(ZNAM, "No")
+	field(ZSV,  "MINOR")
+	field(ONAM, "Yes")
+	field(OSV,  "NO_ALARM")
+	field(SCAN, "I/O Intr")
+}
+
+# These records show the other configuration parameters
+record ( stringin, "${DN}:${R}:CONFIGFILEDIRECTORY" )
+{
+	field ( DTYP, "asynOctetRead" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))CONFIGURATION_FILE_DIRECTORY" )
+	field ( SCAN, "I/O Intr" )
+	field (  VAL, "" )
+}
+
+record ( ai, "${DN}:${R}:BEAMSPACESTARTX" )
+{
+	field ( DTYP, "asynFloat64" )
+	field (  INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))BEAMSPACE_START_X" )
+	field (  EGU, "mm" )
+	field ( PREC, "2" )
+	field ( SCAN, "I/O Intr" )
+}
+
+record ( ai, "${DN}:${R}:BEAMSPACEENDX" )
+{
+	field ( DTYP, "asynFloat64" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))BEAMSPACE_END_X" )
+	field (  EGU, "mm" )
+	field ( PREC, "2" )
+	field ( SCAN, "I/O Intr" )
+}
+
+record ( ai, "${DN}:${R}:BEAMSPACESTARTY" )
+{
+	field ( DTYP, "asynFloat64" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))BEAMSPACE_START_Y" )
+	field (  EGU, "mm" )
+	field ( PREC, "2" )
+	field ( SCAN, "I/O Intr" )
+}
+
+record ( ai, "${DN}:${R}:BEAMSPACEENDY" )
+{
+	field ( DTYP, "asynFloat64" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))BEAMSPACE_END_Y" )
+	field (  EGU, "mm" )
+	field ( PREC, "2" )
+	field ( SCAN, "I/O Intr" )
+}
+
+record ( longin, "${DN}:${R}:IIMAGEWIDTH" )
+{
+	field ( DTYP, "asynInt32" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))INPUT_IMAGE_WIDTH" )
+	field (  EGU, "px" )
+	field ( SCAN, "I/O Intr" )
+}
+
+record ( longin, "${DN}:${R}:IIMAGEHEIGHT" )
+{
+	field ( DTYP, "asynInt32" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))INPUT_IMAGE_HEIGHT" )
+	field (  EGU, "px" )
+	field ( SCAN, "I/O Intr" )
+}
+
+record ( longin, "${DN}:${R}:OIMAGEWIDTH" )
+{
+	field ( DTYP, "asynInt32" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))OUTPUT_IMAGE_WIDTH" )
+	field (  EGU, "px" )
+	field ( SCAN, "I/O Intr" )
+}
+
+record ( longin, "${DN}:${R}:OIMAGEHEIGHT" )
+{
+	field ( DTYP, "asynInt32" )
+	field ( INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))OUTPUT_IMAGE_HEIGHT" )
+	field (  EGU, "px" )
+	field ( SCAN, "I/O Intr" )
+}

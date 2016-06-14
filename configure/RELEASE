@@ -1,0 +1,28 @@
+#***************************************************
+# $Revision: 1.4 $
+# $Date: 2014/06/03 19:41:06 $
+#***************************************************
+#RELEASE Location of external products
+# Run "gnumake clean uninstall install" in the application
+# top directory each time this file is changed.
+#
+# NOTE: The build does not check dependancies on files
+# external to this application. Thus you should run
+# "gnumake clean uninstall install" in the top directory
+# each time EPICS_BASE, SNCSEQ, or any other external
+# module defined in the RELEASE file is rebuilt.
+EPICS_RELEASE = R3.14.12.3
+
+AREADETECTOR_RELEASE = R2.0/$(EPICS_RELEASE)
+ASYN_RELEASE = R4-22/$(EPICS_RELEASE)
+
+# EPICS_BASE usually appears last so other apps can override stuff:
+# This is to allow builds against arbitrary EPICS releases, for sources
+# in this common code base.
+AREADETECTOR = /usr/src/epics3.14-areadetector1.10
+ADCORE = $(AREADETECTOR)/ADCore
+ASYN = /usr/src/epics3.14-asyn4.22
+EPICS_BASE = /usr/src/epics3.14
+
+#STATIC_BUILD=YES
+

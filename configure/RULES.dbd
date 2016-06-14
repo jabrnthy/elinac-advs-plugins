@@ -1,0 +1,15 @@
+# RULES.dbd 2001/09/24 16:36:50 G.Waters
+#
+#	Rules for making dbd files
+#   NOTE: do not use with any other included RULES
+#
+install: buildInstall 
+buildInstall: $(DBD_NAME)
+
+ifdef DBD_NAME
+$(DBD_NAME): $(DBD_SRCS)
+	@echo Creating $(DBD_NAME) from $(DBD_SRCS)
+	cat $(DBD_SRCS) > $(DBD_NAME)
+	@echo Installing $(INSTALL_LOCATION)/dbd/$(DBD_NAME)
+	@cp $(DBD_NAME) $(INSTALL_LOCATION)/dbd/$(DBD_NAME)
+endif	

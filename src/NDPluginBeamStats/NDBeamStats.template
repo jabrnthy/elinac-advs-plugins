@@ -1,0 +1,157 @@
+###################################################################
+#  These records contain the beamspace statistics                 #
+###################################################################
+
+record ( ai, "${DN}:${R}:CENTROIDX" )
+{
+	field ( DTYP, "asynFloat64" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))CENTROIDX" )
+	field (  EGU, "mm" )
+	field ( PREC, "3" )
+	field ( SCAN, "I/O Intr" )
+}
+
+record ( ai, "${DN}:${R}:CENTROIDY" )
+{
+	field ( DTYP, "asynFloat64" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))CENTROIDY" )
+	field (  EGU, "mm" )
+	field ( PREC, "3" )
+	field ( SCAN, "I/O Intr" )
+}
+
+record ( ai, "${DN}:${R}:STDEVX" )
+{
+	field ( DTYP, "asynFloat64" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))STDEVX" )
+	field (  EGU, "mm" )
+	field ( PREC, "3" )
+	field ( SCAN, "I/O Intr" )
+}
+
+record ( ai, "${DN}:${R}:STDEVY" )
+{
+	field ( DTYP, "asynFloat64" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))STDEVY" )
+	field (  EGU, "mm" )
+	field ( PREC, "3" )
+	field ( SCAN, "I/O Intr" )
+}
+
+record ( ai, "${DN}:${R}:CORRELATION" )
+{
+	field ( DTYP, "asynFloat64" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))CORRELATION" )
+	field (  EGU, "" )
+	field ( PREC, "5" )
+	field ( SCAN, "I/O Intr" )
+}
+
+record ( ai, "${DN}:${R}:MOMENT:M00" )
+{
+	field ( DTYP, "asynFloat64" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))M00" )
+	field (  EGU, "" )
+	field ( PREC, "3" )
+	field ( SCAN, "I/O Intr" )
+}
+
+record ( ai, "${DN}:${R}:MOMENT:M10" )
+{
+	field ( DTYP, "asynFloat64" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))M10" )
+	field (  EGU, "mm" )
+	field ( PREC, "3" )
+	field ( SCAN, "I/O Intr" )
+}
+
+record ( ai, "${DN}:${R}:MOMENT:M01" )
+{
+	field ( DTYP, "asynFloat64" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))M01" )
+	field (  EGU, "mm" )
+	field ( PREC, "3" )
+	field ( SCAN, "I/O Intr" )
+}
+
+record ( ai, "${DN}:${R}:MOMENT:M20" )
+{
+	field ( DTYP, "asynFloat64" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))M20" )
+	field (  EGU, "mm^2" )
+	field ( PREC, "3" )
+	field ( SCAN, "I/O Intr" )
+}
+
+record ( ai, "${DN}:${R}:MOMENT:M11" )
+{
+	field ( DTYP, "asynFloat64" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))M11" )
+	field (  EGU, "mm^2" )
+	field ( PREC, "3" )
+	field ( SCAN, "I/O Intr" )
+}
+
+record ( ai, "${DN}:${R}:MOMENT:M02" )
+{
+	field ( DTYP, "asynFloat64" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))M02" )
+	field (  EGU, "mm^2" )
+	field ( PREC, "3" )
+	field ( SCAN, "I/O Intr" )
+}
+
+record ( ai, "${DN}:${R}:MOMENT:U00" )
+{
+	field ( DTYP, "asynFloat64" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))U00" )
+	field (  EGU, "" )
+	field ( PREC, "3" )
+	field ( SCAN, "I/O Intr" )
+}
+
+record ( ai, "${DN}:${R}:MOMENT:U10" )
+{
+	field ( DTYP, "asynFloat64" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))U10" )
+	field (  EGU, "mm" )
+	field ( PREC, "3" )
+	field ( SCAN, "I/O Intr" )
+}
+
+record ( ai, "${DN}:${R}:MOMENT:U01" )
+{
+	field ( DTYP, "asynFloat64" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))U01" )
+	field (  EGU, "mm" )
+	field ( PREC, "3" )
+	field ( SCAN, "I/O Intr" )
+}
+
+record ( ai, "${DN}:${R}:MOMENT:U20" )
+{
+	field ( DTYP, "asynFloat64" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))U20" )
+	field (  EGU, "mm^2" )
+	field ( PREC, "3" )
+	field ( SCAN, "I/O Intr" )
+}
+
+record ( ai, "${DN}:${R}:MOMENT:U11" )
+{
+	field ( DTYP, "asynFloat64" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))U11" )
+	field (  EGU, "mm^2" )
+	field ( PREC, "3" )
+	field ( SCAN, "I/O Intr" )
+}
+
+record ( ai, "${DN}:${R}:MOMENT:U02" )
+{
+	field ( DTYP, "asynFloat64" )
+	field (  INP, "@asyn($(PORT),$(ADDR),$(TIMEOUT))U02" )
+	field (  EGU, "mm^2" )
+	field ( PREC, "3" )
+	field ( SCAN, "I/O Intr" )
+}
+

@@ -1,0 +1,61 @@
+record(stringout, "$(P)$(R)TextColour")
+{
+    field(PINI, "NO")
+    field(DTYP, "asynOctetWrite")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))TICKLABEL_COLOUR")
+}
+
+record(stringout, "$(P)$(R)BackgroundColour")
+{
+    field(PINI, "NO")
+    field(DTYP, "asynOctetWrite")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))BACKGROUND_COLOUR")
+}
+
+record(stringout, "$(P)$(R)AxesColour")
+{
+    field(PINI, "NO")
+    field(DTYP, "asynOctetWrite")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))AXES_COLOUR")
+}
+
+record(stringout, "$(P)$(R)GridColour")
+{
+    field(PINI, "NO")
+    field(DTYP, "asynOctetWrite")
+    field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))GRID_COLOUR")
+}
+
+record(mbbo, "$(P)$(R)AxesOrigin")
+{
+   field(PINI, "YES")
+   field(DTYP, "asynInt32")
+   field(OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))AXES_ORIGIN")
+   field(ZRST, "None")
+   field(ZRVL, "0")
+   field(ONST, "Top Left")
+   field(ONVL, "1")
+   field(TWST, "Bottom Left")
+   field(TWVL, "2")
+   field(THST, "Top Right")
+   field(THVL, "3")
+   field(FRST, "Bottom Right")
+   field(FRVL, "4")
+}
+
+record(mbbi, "$(P)$(R)AxesOrigin_RBV")
+{
+   field(DTYP, "asynInt32")
+   field(INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))AXES_ORIGIN")
+	field(ZRST, "None")
+   field(ZRVL, "0")
+   field(ONST, "Top Left")
+   field(ONVL, "1")
+   field(TWST, "Bottom Left")
+   field(TWVL, "2")
+   field(THST, "Top Right")
+   field(THVL, "3")
+   field(FRST, "Bottom Right")
+   field(FRVL, "4")
+   field(SCAN, "I/O Intr")
+}

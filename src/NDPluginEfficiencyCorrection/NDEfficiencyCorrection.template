@@ -1,0 +1,56 @@
+
+# the target number needs to be assigned by the actuator IOC
+record ( longout, "${DN}:${R}TARGETNUMBER" )
+{
+	field ( PINI, "NO" )
+	field ( DTYP, "asynInt32" )
+	field ( OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))CURRENT_TARGET_NUMBER" )
+}
+
+record ( longin, "${DN}:${R}TARGETNUMBER_RBV" )
+{
+	field ( DTYP, "asynInt32" )
+	field ( INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))CURRENT_TARGET_NUMBER" )
+	field ( SCAN, "I/O Intr" )
+}
+
+
+# the iris diameter needs to be set by the viewscreenioc IOC
+record ( ao, "${DN}:${R}IRISDIAMETER" )
+{
+	field ( DTYP, "asynFloat64" )
+	field ( SCAN, "Passive" )
+	field ( OMSL, "closed_loop" )
+	field ( DOL,  "${DN}:IRIS.RBV CPP MS" )
+	field ( OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))CURRENT_IRIS_DIAMETER" )
+	field ( PREC, "2" )
+	field ( EGU,  "mm" )
+}
+
+record ( ai, "${DN}:${R}IRISDIAMETER_RBV" )
+{
+	field ( DTYP, "asynFloat64" )
+	field ( INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))CURRENT_IRIS_DIAMETER" )
+	field ( SCAN, "I/O Intr" )
+	field ( PREC, "2" )
+	field ( EGU,  "mm")
+}
+
+
+# the beam energy needs to be set ~somehow~ for OTR targets
+record ( ao, "${DN}:${R}BEAMENERGY" )
+{
+	field ( DTYP, "asynFloat64" )
+	field ( OUT,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))CURRENT_BEAM_ENERGY" )
+	field ( PREC, "3" )
+	field ( EGU,  "MeV" )
+}
+
+record ( ai, "${DN}:${R}BEAMENERGY_RBV" )
+{
+	field ( DTYP, "asynFloat64" )
+	field ( INP,  "@asyn($(PORT),$(ADDR),$(TIMEOUT))CURRENT_BEAM_ENERGY" )
+	field ( SCAN, "I/O Intr" )
+	field ( PREC, "3" )
+	field (  EGU, "MeV" )
+}

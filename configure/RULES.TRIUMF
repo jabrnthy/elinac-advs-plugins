@@ -1,0 +1,13 @@
+# RULES.TRIUMF
+# ************************************************************************
+#	Rules for making identifier file
+#
+#	J. Richards 080922
+# $Revision: 1.1.1.1 $
+# $Date: 2014/02/04 02:05:04 $
+#************************************************************************
+signature.h : $(TOP)/src/*
+	$(TOP)/configure/makesig.pl PRODNAME=$(DEV1) COMPILER=$(CC) LIBS='$($(DEV1)_LIBS)'
+	
+
+
