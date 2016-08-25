@@ -245,9 +245,9 @@ ViewScreenConfiguredNDPlugin::ConfigurationStatus_t NDPluginGeometricTransform::
 			*/
 
 			// the corners _should_ be sorted in a counter-clockwise order with clip_vertices[0] at the -x,+y position
-			const size_t vcii = max( (int)min( round(clip_vertices[2].y), round(clip_vertices[3].y) ), 0 );
+			const size_t vcii = max( min( (int)min( round(clip_vertices[2].y), round(clip_vertices[3].y) ), (int)input_image_height - 1 ), 0 );
 			const size_t vcif = max( min( (int)max( round(clip_vertices[0].y), round(clip_vertices[1].y) ), (int)input_image_height - 1 ), 0 );
-			const size_t ucii = max( (int)min( round(clip_vertices[0].x), round(clip_vertices[3].x) ), 0 );
+			const size_t ucii = max( min( (int)min( round(clip_vertices[0].x), round(clip_vertices[3].x) ), (int)input_image_width - 1 ), 0 );
 			const size_t ucif = max( min( (int)max( round(clip_vertices[1].x), round(clip_vertices[2].x) ), (int)input_image_width - 1 ), 0 );
 
 			subject_vertices[0].x = -0.5;
